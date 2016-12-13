@@ -1,4 +1,4 @@
-package com.example.ivandimitrov.multithreading;
+package com.example.ivandimitrov.multithreading.NodeTypes;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -20,7 +20,7 @@ public class SiteNode implements Parcelable {
     private URL url;
     private String nodeName = "DUMMY";
 
-    SiteNode(SiteNode perentNode, int debth, URL url) {
+    public SiteNode(SiteNode perentNode, int debth, URL url) {
         this.perentNode = perentNode;
         this.debth = debth;
         this.url = url;

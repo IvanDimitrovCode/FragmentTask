@@ -3,7 +3,8 @@ package com.example.ivandimitrov.multithreading;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.webkit.WebView;
+
+import com.example.ivandimitrov.multithreading.NodeTypes.SiteNode;
 
 import java.io.BufferedReader;
 import java.io.File;

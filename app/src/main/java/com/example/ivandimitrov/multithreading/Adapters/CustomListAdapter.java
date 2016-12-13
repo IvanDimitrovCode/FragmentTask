@@ -1,4 +1,4 @@
-package com.example.ivandimitrov.multithreading;
+package com.example.ivandimitrov.multithreading.Adapters;
 
 
 import android.app.Activity;
@@ -6,20 +6,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ivandimitrov.multithreading.NodeTypes.CitiesWeather;
+import com.example.ivandimitrov.multithreading.R;
 
 import java.util.ArrayList;
 
-public class CustomListAdapter extends ArrayAdapter<SiteNode> {
+public class CustomListAdapter extends ArrayAdapter<CitiesWeather> {
 
     private final Activity context;
-    private ArrayList<SiteNode> siteNodeList = new ArrayList<SiteNode>();
+    private ArrayList<CitiesWeather> citiesList = new ArrayList<CitiesWeather>();
 
-    public CustomListAdapter(Activity context, ArrayList<SiteNode> itemname) {
+    public CustomListAdapter(Activity context, ArrayList<CitiesWeather> itemname) {
         super(context, R.layout.activity_listview, itemname);
         this.context = context;
-        this.siteNodeList = itemname;
+        this.citiesList = itemname;
     }
 
     @Override
@@ -34,7 +36,7 @@ public class CustomListAdapter extends ArrayAdapter<SiteNode> {
         } else {
             viewHolder = (ViewHolder) view.getTag();
         }
-        viewHolder.txtTitle.setText(siteNodeList.get(position).getNodeName());
+        viewHolder.txtTitle.setText(citiesList.get(position).getName());
         return view;
     }
 
