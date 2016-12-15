@@ -35,6 +35,7 @@ public class CallAPI extends AsyncTask<CitiesWeather, CitiesWeather, CitiesWeath
         super.onPreExecute();
     }
 
+
     @Override
     protected CitiesWeather doInBackground(CitiesWeather... params) {
         CitiesWeather cities[] = params;

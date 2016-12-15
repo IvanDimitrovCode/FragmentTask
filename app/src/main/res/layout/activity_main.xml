@@ -5,17 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button1"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exit" />
-
-    <fragment
-        android:id="@+id/fragment"
-        android:name="com.example.ivandimitrov.multithreading.FragmentTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout="@layout/fragment" />
+        android:layout_height="wrap_content"></ListView>
 
 </LinearLayout>

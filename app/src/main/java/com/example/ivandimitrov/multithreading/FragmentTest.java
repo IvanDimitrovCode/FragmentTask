@@ -84,7 +84,7 @@ public class FragmentTest extends Fragment implements CallAPI.CustomListener {
     }
 
     void update(CitiesWeather node) {
-        new CallAPI(customListener).execute(node);
+//        new CallAPI(customListener).execute(node);
     }
 
     @Override
